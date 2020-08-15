@@ -339,8 +339,8 @@ public class IridiumSkyblock extends JavaPlugin {
         Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "mv modify set generator " + getName() + " " + islandManager.getWorld().getName());
 
         if (IridiumSkyblock.getConfiguration().netherIslands) {
-            Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "mv import " + islandManager.getNetherWorld().getName() + " nether -g " + getName());
-            Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "mv modify set generator " + getName() + " " + islandManager.getNetherWorld().getName());
+            Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "mv import " + islandManager.getNetherWorld().getName() + " nether");
+            //Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "mv modify set generator " + getName() + " " + islandManager.getNetherWorld().getName());
         }
     }
 
